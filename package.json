@@ -1,0 +1,33 @@
+{
+  "name": "bootstrap-modal-ios",
+  "version": "1.0.0",
+  "description": "Bootstrap Modal for iOS stops page scrolling while a modal is displayed and adjusts the overlay position according to iOS Safari toolbars.",
+  "main": "index.js",
+  "dependencies": {
+    "jquery": "^3.3.1",
+    "popper.js": "^1.14.3",
+    "bootstrap": "^4.1.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/radogado/bootstrap-modal-ios.git"
+  },
+  "keywords": [
+    "bootstrap",
+    "modal",
+    "ios",
+    "safari",
+    "fixed",
+    "position"
+  ],
+  "author": "Radoslav Sharapanov <spacest@gmail.com> (http://github.com/radogado)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/radogado/bootstrap-modal-ios/issues"
+  },
+  "homepage": "https://github.com/radogado/bootstrap-modal-ios#readme"
+}
