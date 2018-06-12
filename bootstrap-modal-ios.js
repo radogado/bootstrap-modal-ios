@@ -170,7 +170,6 @@ function adjustModal(e) {
 
 $('.modal').each(function () {
 	
-	var previousScrollX = window.scrollX;
 	var previousScrollY = window.scrollY;
 
 	$(this).on('shown.bs.modal', function (e) {
@@ -179,7 +178,6 @@ $('.modal').each(function () {
 		$(active_modal)[0].scrollTop = 0;
 		document.documentElement.classList.add('no-scroll');
 		disableBodyScroll(true, active_modal);
-		previousScrollX = window.scrollX;
 		previousScrollY = window.scrollY;
 		adjustModal();
 		window.addEventListener('resize', adjustModal, { passive: false });
@@ -198,7 +196,7 @@ $('.modal').each(function () {
 	$(this).on('hidden.bs.modal', function (e) {
 	
 		document.documentElement.classList.remove('no-scroll');
-		window.scrollTo(previousScrollX, previousScrollY);
+		$('body').animate({scrollTop: previousScrollY}, 200);
 		disableBodyScroll(false, '.modal-dialog');
 		window.removeEventListener('resize', adjustModal, { passive: false });
 	
