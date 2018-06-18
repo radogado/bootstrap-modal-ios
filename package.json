@@ -1,6 +1,6 @@
 {
   "name": "bootstrap-modal-ios",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Bootstrap Modal for iOS stops page scrolling while a modal is displayed and adjusts the overlay position according to iOS Safari toolbars.",
   "main": "index.js",
   "dependencies": {
